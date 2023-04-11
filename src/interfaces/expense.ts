@@ -5,6 +5,11 @@ export interface IExpense {
     userID: string;
     amount: number;
     status: string;
-    _user: { [key: string]: unknown };
+    _user: {
+        id: string;
+        name: string;
+        lastName: string;
+        email: string;
+    };
     _category: { [key: string]: unknown };
 }
