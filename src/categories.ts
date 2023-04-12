@@ -7,7 +7,7 @@ const route = express.Router();
 route.get('/', (req: Request, res: Response) => {
     const categorias = loadDatabase('categories');
 
-    res.json(categorias);
+    res.status(200).json(categorias);
 });
 
 export default route;

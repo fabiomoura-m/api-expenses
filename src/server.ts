@@ -11,4 +11,4 @@ app.use('/categories', categoriesRoute);
 app.use('/expenses', expensesRoute);
 app.use('/users', usersRoute);
 
-app.listen(3000, () => 'server running port 3000');
+app.listen(3000, () => console.log('server running port 3000'));
