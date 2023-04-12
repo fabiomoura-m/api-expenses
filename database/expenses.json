@@ -1,1 +1,38 @@
-[]
+[
+    {
+        "id": "exp4",
+        "name": "Despesa 4",
+        "categoryID": "cat4",
+        "userID": "user_3def4",
+        "amount": 2500,
+        "status": "PAGO",
+        "_user": {
+            "id": "user_3def4",
+            "name": "Jane",
+            "lastName": "Doe",
+            "email": "janedoe@example.com"
+        },
+        "_category": {
+            "id": "cat4",
+            "name": "Lazer"
+        }
+    },
+    {
+        "id": "exp5",
+        "name": "Despesa 5",
+        "categoryID": "cat5",
+        "userID": "user_3def4",
+        "amount": 5000,
+        "status": "PENDENTE",
+        "_user": {
+            "id": "user_3def4",
+            "name": "Jane",
+            "lastName": "Doe",
+            "email": "janedoe@example.com"
+        },
+        "_category": {
+            "id": "cat5",
+            "name": "Saúde"
+        }
+    }
+]

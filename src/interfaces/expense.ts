@@ -1,3 +1,5 @@
+import { ICategory } from './category';
+
 export interface IExpense {
     id: string;
     name: string;
@@ -11,5 +13,5 @@ export interface IExpense {
         lastName: string;
         email: string;
     };
-    _category: { [key: string]: unknown };
+    _category: ICategory;
 }
