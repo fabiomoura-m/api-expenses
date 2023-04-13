@@ -12,10 +12,10 @@ route.get('/', (req: Request, res: Response) => {
 });
 
 route.get('/:id', (req: Request, res: Response) => {
-    const expenses = loadDatabase('expenses');
+    const expenses:IExpense[] = loadDatabase('expenses');
     const id = req.params.id;
 
-    const expense: IExpense = expenses.find((item: IExpense) => item.id === id);
+    const expense = expenses.find(item => item.id === id);
 
     if(!expense){
         res.status(404).json({message: 'Despesa não encontrada'})
