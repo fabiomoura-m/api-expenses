@@ -1,8 +1,4 @@
-export function searchUser(id:string){
-    const users = require('../../database/users.json')
-    let contador:number = 0
-    while(users[contador].id !== id){
-        contador++
-    }
-    return users[contador]  
-}
+import { IUser } from "../interfaces/user"
+export function searchUser(id: string, users: IUser[]) {
+    return users.find(user => user.id === id)
+} 
