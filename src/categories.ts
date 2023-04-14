@@ -11,4 +11,16 @@ route.get('/', (req: Request, res: Response) => {
     res.status(200).json(categorias);
 });
 
+route.get('/:categoryID', (req: Request, res: Response) => {
+    const categorias:ICategory[] = loadDatabase('categories');
+    const id = req.params.categoryID;
+
+    const categoria = categorias.find(item => item.id === id);
+
+    if(!categoria){
+        res.status(404).json({message: 'Categoria não encontrada'})
+    }
+
+    res.status(200).json(categoria);
+});
 export default route;
