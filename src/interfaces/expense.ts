@@ -23,7 +23,7 @@ export interface IBodyPostExpense {
     amount: number;
 }
 
-export interface IExpenseForUser{
+export interface IExpenseForUser {
     id: string;
     name: string;
     categoryID: string;
@@ -31,4 +31,12 @@ export interface IExpenseForUser{
     amount: number;
     status: string;
     _category: ICategory;
+}
+
+export interface IBodyUpdateExpense {
+    name: string;
+    categoryID: string;
+    userID: string;
+    amount: number;
+    status: string;
 }
