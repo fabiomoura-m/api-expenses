@@ -211,4 +211,30 @@ route.put('/:expenseID', (req: Request, res: Response) => {
     return res.status(200).json(updatedExpense);
 });
 
+route.delete('/:expenseID', (req: Request, res: Response) => {
+    const expenses: IExpense[] = loadDatabase('expenses');
+    const users: IUser[] = loadDatabase('users');
+    const idExpense = req.params.expenseID;
+
+    const expense = expenses.find(expense => expense.id === idExpense);
+
+    if (!expense) {
+        return res.status(404).json({ message: 'Despesa não encontrada' });
+    }
+
+    const userId = expense.userID;
+    const currentUserIndex = users.findIndex(user => user.id === userId);
+    users[currentUserIndex]._expenses = users[
+        currentUserIndex
+    ]._expenses.filter(item => item.id !== idExpense);
+
+    const newExpenses = expenses.filter(expense => expense.id !== idExpense);
+
+    saveDataInJson(newExpenses, 'expenses');
+    saveDataInJson(users, 'users');
+
+    return res.status(204).json('Ok');
+});
+
+
 export default route;
