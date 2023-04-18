@@ -7,3 +7,9 @@ export interface IUser {
   email: string;
   _expenses: IExpenseForUser[];
 }
+
+export interface IBodyPostUser {
+  name: string;
+  lastName: string;
+  email: string;
+}
