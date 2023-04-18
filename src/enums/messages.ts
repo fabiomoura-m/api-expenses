@@ -4,8 +4,10 @@ enum messages {
     invalidIdUserOrCategory = 'ID do usuário ou da categoria inválidos',
     expenseNotUpdated = 'Despesa não atualizada',
     categoryIDNotFound = 'Adicione uma categoryID de uma categoria existente',
+    categoryNotFound = 'Categoria não encontrada',
+    categoryNotUpdated= 'Categoria não atualizada',
     userIDNotFound = 'Adicione um userID de um usuario existente',
-    userNotFound = 'Usúario inválido'
+    userNotFound = 'Usúario inválido',
 }
 
 export default messages;
