@@ -2,6 +2,6 @@ export interface ICategory {
     id: string;
     name: string;
 }
-export interface IBodyPostCategory {
+export interface IBodyCategory {
     name: string;
 }
