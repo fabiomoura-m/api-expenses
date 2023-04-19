@@ -84,13 +84,13 @@ route.put('/:categoryID', (req: Request, res: Response) => {
         }
     });
 
-    users.forEach(user=>{
-        user._expenses.forEach(expense=>{
+    users.forEach(user => {
+        user._expenses.forEach(expense => {
             if (expense.categoryID === idCategory) {
                 expense._category.name = body.name;
             }
-        })
-    })
+        });
+    });
 
     saveDataInJson(categories, 'categories');
     saveDataInJson(expenses, 'expenses');
@@ -98,4 +98,37 @@ route.put('/:categoryID', (req: Request, res: Response) => {
 
     res.status(200).json(categories[categoryIndex]);
 });
+
+route.delete('/:categoryID', (req: Request, res: Response) => {
+    let categories: ICategory[] = loadDatabase('categories');
+    let expenses: IExpense[] = loadDatabase('expenses');
+    let users: IUser[] = loadDatabase('users');
+    const { categoryID } = req.params;
+
+    const categoryIndex = categories.findIndex(
+        categorie => categorie.id === categoryID
+    );
+
+    if (categoryIndex === -1) {
+        res.status(404).json({ message: messages.categoryNotFound });
+    }
+
+    expenses = expenses.filter(expense => expense.categoryID !== categoryID);
+
+    categories.splice(categoryIndex, 1);
+
+    users.forEach(user => {
+        const newExpenses = user._expenses.filter(
+            expense => expense.categoryID !== categoryID
+        );
+        user._expenses = newExpenses;
+    });
+
+    saveDataInJson(categories, 'categories');
+    saveDataInJson(expenses, 'expenses');
+    saveDataInJson(users, 'users');
+
+    res.status(204).json();
+});
+
 export default route;
