@@ -3,6 +3,5 @@
     { "id": "cat2", "name": "Transporte" },
     { "id": "cat3", "name": "Moradia" },
     { "id": "cat4", "name": "Lazer" },
-    { "id": "cat5", "name": "Saude" },
-    { "id": "cat_1865485", "name": "teste" }
+    { "id": "cat5", "name": "Saude" }
 ]
