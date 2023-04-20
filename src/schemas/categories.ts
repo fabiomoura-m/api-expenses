@@ -1,6 +1,10 @@
 import Joi from 'joi';
-import { IBodyPostCategory } from '../interfaces/category';
+import { IBodyCategory } from '../interfaces/category';
 
-export const bodyPostSchema: Joi.ObjectSchema<IBodyPostCategory> = Joi.object({
+export const bodyCategorySchema: Joi.ObjectSchema<IBodyCategory> = Joi.object({
     name: Joi.string().required()
 });
+
+export const bodySchema = {
+    name: 'string'
+};
