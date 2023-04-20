@@ -1,253 +1,253 @@
 [
-    {
-        "id": "user_1abc2",
-        "name": "John",
-        "lastName": "Doe",
-        "email": "johndoe@example.com",
-        "_expenses": [
-            {
-                "id": "exp1",
-                "name": "Despesa 1",
-                "categoryID": "cat1",
-                "userID": "user_1abc2",
-                "amount": 1000,
-                "status": "PENDENTE",
-                "_category": { "id": "cat1", "name": "Alimentação" }
-            },
-            {
-                "id": "exp2",
-                "name": "Despesa 2",
-                "categoryID": "cat2",
-                "userID": "user_1abc2",
-                "amount": 2000,
-                "status": "PAGO",
-                "_category": { "id": "cat2", "name": "Transporte" }
-            },
-            {
-                "id": "exp3",
-                "name": "Despesa 3",
-                "categoryID": "cat3",
-                "userID": "user_1abc2",
-                "amount": 1500,
-                "status": "PENDENTE",
-                "_category": { "id": "cat3", "name": "Moradia" }
-            }
-        ],
-        "_categories": [
-            {
-                "id": "cat1",
-                "name": "Alimentação",
-                "_expenses": [
-                    {
-                        "id": "exp1",
-                        "name": "Despesa 1",
-                        "categoryID": "cat1",
-                        "userID": "user_1abc2",
-                        "amount": 1000,
-                        "status": "PENDENTE",
-                        "_category": { "id": "cat1", "name": "Alimentação" }
-                    }
-                ]
-            },
-            {
-                "id": "cat2",
-                "name": "Transporte",
-                "_expenses": [
-                    {
-                        "id": "exp2",
-                        "name": "Despesa 2",
-                        "categoryID": "cat2",
-                        "userID": "user_1abc2",
-                        "amount": 2000,
-                        "status": "PAGO",
-                        "_category": { "id": "cat2", "name": "Transporte" }
-                    }
-                ]
-            },
-            {
-                "id": "cat3",
-                "name": "Moradia",
-                "_expenses": [
-                    {
-                        "id": "exp3",
-                        "name": "Despesa 3",
-                        "categoryID": "cat3",
-                        "userID": "user_1abc2",
-                        "amount": 1500,
-                        "status": "PENDENTE",
-                        "_category": { "id": "cat3", "name": "Moradia" }
-                    }
-                ]
-            },
-            { "id": "cat4", "name": "Lazer", "_expenses": [] },
-            { "id": "cat5", "name": "Saúde", "_expenses": [] }
-        ]
-    },
-    {
-        "id": "user_3def4",
-        "name": "Jane",
-        "lastName": "Doe",
-        "email": "janedoe@example.com",
-        "_expenses": [
-            {
-                "id": "exp4",
-                "name": "Despesa 4",
-                "categoryID": "cat4",
-                "userID": "user_3def4",
-                "amount": 2500,
-                "status": "PAGO",
-                "_category": { "id": "cat4", "name": "Lazer" }
-            },
-            {
-                "id": "exp5",
-                "name": "Despesa 5",
-                "categoryID": "cat5",
-                "userID": "user_3def4",
-                "amount": 5000,
-                "status": "PENDENTE",
-                "_category": { "id": "cat5", "name": "Saúde" }
-            },
-            {
-                "id": "exp6",
-                "name": "Despesa 6",
-                "categoryID": "cat1",
-                "userID": "user_3def4",
-                "amount": 3000,
-                "status": "PAGO",
-                "_category": { "id": "cat1", "name": "Alimentação" }
-            },
-            {
-                "id": "exp7",
-                "name": "Despesa 7",
-                "categoryID": "cat2",
-                "userID": "user_3def4",
-                "amount": 4000,
-                "status": "PAGO",
-                "_category": { "id": "cat2", "name": "Transporte" }
-            }
-        ]
-    },
-    {
-        "id": "user_5ghi6",
-        "name": "James",
-        "lastName": "Smith",
-        "email": "jamessmith@example.com",
-        "_expenses": []
-    },
-    {
-        "id": "user_7jkl8",
-        "name": "Emily",
-        "lastName": "Johnson",
-        "email": "emilyjohnson@example.com",
-        "_expenses": [
-            {
-                "id": "exp8",
-                "name": "Despesa 8",
-                "categoryID": "cat3",
-                "userID": "user_7jkl8",
-                "amount": 6000,
-                "status": "PAGO",
-                "_category": { "id": "cat3", "name": "Moradia" }
-            },
-            {
-                "id": "exp9",
-                "name": "Despesa 9",
-                "categoryID": "cat4",
-                "userID": "user_7jkl8",
-                "amount": 8000,
-                "status": "PAGO",
-                "_category": { "id": "cat4", "name": "Lazer" }
-            },
-            {
-                "id": "exp10",
-                "name": "Despesa 10",
-                "categoryID": "cat5",
-                "userID": "user_7jkl8",
-                "amount": 9000,
-                "status": "PAGO",
-                "_category": { "id": "cat5", "name": "Saúde" }
-            },
-            {
-                "id": "exp11",
-                "name": "Despesa 11",
-                "categoryID": "cat1",
-                "userID": "user_7jkl8",
-                "amount": 11000,
-                "status": "PAGO",
-                "_category": { "id": "cat1", "name": "Alimentação" }
-            },
-            {
-                "id": "exp12",
-                "name": "Despesa 12",
-                "categoryID": "cat2",
-                "userID": "user_7jkl8",
-                "amount": 12000,
-                "status": "PENDENTE",
-                "_category": { "id": "cat2", "name": "Transporte" }
-            }
-        ]
-    },
-    {
-        "id": "user_9mno0",
-        "name": "Michael",
-        "lastName": "Brown",
-        "email": "michaelbrown@example.com",
-        "_expenses": []
-    },
-    {
-        "id": "user_bcd1f",
-        "name": "Sarah",
-        "lastName": "Davis",
-        "email": "sarahdavis@example.com",
-        "_expenses": []
-    },
-    {
-        "id": "user_efg2h",
-        "name": "David",
-        "lastName": "Wilson",
-        "email": "davidwilson@example.com",
-        "_expenses": []
-    },
-    {
-        "id": "user_ijk3l",
-        "name": "Emily",
-        "lastName": "Moore",
-        "email": "emilymoore@example.com",
-        "_expenses": []
-    },
-    {
-        "id": "user_mno4p",
-        "name": "William",
-        "lastName": "Taylor",
-        "email": "williamtaylor@example.com",
-        "_expenses": []
-    },
-    {
-        "id": "user_pqr5t",
-        "name": "Elizabeth",
-        "lastName": "Anderson",
-        "email": "elizabethanderson@example.com",
-        "_expenses": []
-    },
-    {
-        "name": "Michael",
-        "lastName": "Brown",
-        "email": "michaelbrown@example.com",
-        "id": "user_1680802237254",
-        "_expenses": []
-    },
-    {
-        "id": "user_1181344",
-        "name": "Paulo",
-        "lastName": "Roberto",
-        "email": "paulo061104@gmail.com",
-        "_expenses": []
-    },
-    {
-        "id": "user_462743",
-        "name": "Paulo",
-        "lastName": "Roberto",
-        "email": "paulo061104@gmail.com",
-        "_expenses": []
-    }
+  {
+      "id": "user_1abc2",
+      "name": "John",
+      "lastName": "Doe",
+      "email": "johndoe@example.com",
+      "_expenses": [
+          {
+              "id": "exp1",
+              "name": "Despesa 1",
+              "categoryID": "cat1",
+              "userID": "user_1abc2",
+              "amount": 1000,
+              "status": "PENDENTE",
+              "_category": { "id": "cat1", "name": "Alimentação" }
+          },
+          {
+              "id": "exp2",
+              "name": "Despesa 2",
+              "categoryID": "cat2",
+              "userID": "user_1abc2",
+              "amount": 2000,
+              "status": "PAGO",
+              "_category": { "id": "cat2", "name": "Transporte" }
+          },
+          {
+              "id": "exp3",
+              "name": "Despesa 3",
+              "categoryID": "cat3",
+              "userID": "user_1abc2",
+              "amount": 1500,
+              "status": "PENDENTE",
+              "_category": { "id": "cat3", "name": "Moradia" }
+          }
+      ],
+      "_categories": [
+          {
+              "id": "cat1",
+              "name": "Alimentação",
+              "_expenses": [
+                  {
+                      "id": "exp1",
+                      "name": "Despesa 1",
+                      "categoryID": "cat1",
+                      "userID": "user_1abc2",
+                      "amount": 1000,
+                      "status": "PENDENTE",
+                      "_category": { "id": "cat1", "name": "Alimentação" }
+                  }
+              ]
+          },
+          {
+              "id": "cat2",
+              "name": "Transporte",
+              "_expenses": [
+                  {
+                      "id": "exp2",
+                      "name": "Despesa 2",
+                      "categoryID": "cat2",
+                      "userID": "user_1abc2",
+                      "amount": 2000,
+                      "status": "PAGO",
+                      "_category": { "id": "cat2", "name": "Transporte" }
+                  }
+              ]
+          },
+          {
+              "id": "cat3",
+              "name": "Moradia",
+              "_expenses": [
+                  {
+                      "id": "exp3",
+                      "name": "Despesa 3",
+                      "categoryID": "cat3",
+                      "userID": "user_1abc2",
+                      "amount": 1500,
+                      "status": "PENDENTE",
+                      "_category": { "id": "cat3", "name": "Moradia" }
+                  }
+              ]
+          },
+          { "id": "cat4", "name": "Lazer", "_expenses": [] },
+          { "id": "cat5", "name": "Saúde", "_expenses": [] }
+      ]
+  },
+  {
+      "id": "user_3def4",
+      "name": "Jane",
+      "lastName": "Doe",
+      "email": "janedoe@example.com",
+      "_expenses": [
+          {
+              "id": "exp4",
+              "name": "Despesa 4",
+              "categoryID": "cat4",
+              "userID": "user_3def4",
+              "amount": 2500,
+              "status": "PAGO",
+              "_category": { "id": "cat4", "name": "Lazer" }
+          },
+          {
+              "id": "exp5",
+              "name": "Despesa 5",
+              "categoryID": "cat5",
+              "userID": "user_3def4",
+              "amount": 5000,
+              "status": "PENDENTE",
+              "_category": { "id": "cat5", "name": "Saúde" }
+          },
+          {
+              "id": "exp6",
+              "name": "Despesa 6",
+              "categoryID": "cat1",
+              "userID": "user_3def4",
+              "amount": 3000,
+              "status": "PAGO",
+              "_category": { "id": "cat1", "name": "Alimentação" }
+          },
+          {
+              "id": "exp7",
+              "name": "Despesa 7",
+              "categoryID": "cat2",
+              "userID": "user_3def4",
+              "amount": 4000,
+              "status": "PAGO",
+              "_category": { "id": "cat2", "name": "Transporte" }
+          }
+      ]
+  },
+  {
+      "id": "user_5ghi6",
+      "name": "James",
+      "lastName": "Smith",
+      "email": "jamessmith@example.com",
+      "_expenses": []
+  },
+  {
+      "id": "user_7jkl8",
+      "name": "Emily",
+      "lastName": "Johnson",
+      "email": "emilyjohnson@example.com",
+      "_expenses": [
+          {
+              "id": "exp8",
+              "name": "Despesa 8",
+              "categoryID": "cat3",
+              "userID": "user_7jkl8",
+              "amount": 6000,
+              "status": "PAGO",
+              "_category": { "id": "cat3", "name": "Moradia" }
+          },
+          {
+              "id": "exp9",
+              "name": "Despesa 9",
+              "categoryID": "cat4",
+              "userID": "user_7jkl8",
+              "amount": 8000,
+              "status": "PAGO",
+              "_category": { "id": "cat4", "name": "Lazer" }
+          },
+          {
+              "id": "exp10",
+              "name": "Despesa 10",
+              "categoryID": "cat5",
+              "userID": "user_7jkl8",
+              "amount": 9000,
+              "status": "PAGO",
+              "_category": { "id": "cat5", "name": "Saúde" }
+          },
+          {
+              "id": "exp11",
+              "name": "Despesa 11",
+              "categoryID": "cat1",
+              "userID": "user_7jkl8",
+              "amount": 11000,
+              "status": "PAGO",
+              "_category": { "id": "cat1", "name": "Alimentação" }
+          },
+          {
+              "id": "exp12",
+              "name": "Despesa 12",
+              "categoryID": "cat2",
+              "userID": "user_7jkl8",
+              "amount": 12000,
+              "status": "PENDENTE",
+              "_category": { "id": "cat2", "name": "Transporte" }
+          }
+      ]
+  },
+  {
+      "id": "user_9mno0",
+      "name": "Michael",
+      "lastName": "Brown",
+      "email": "michaelbrown@example.com",
+      "_expenses": []
+  },
+  {
+      "id": "user_bcd1f",
+      "name": "Sarah",
+      "lastName": "Davis",
+      "email": "sarahdavis@example.com",
+      "_expenses": []
+  },
+  {
+      "id": "user_efg2h",
+      "name": "David",
+      "lastName": "Wilson",
+      "email": "davidwilson@example.com",
+      "_expenses": []
+  },
+  {
+      "id": "user_ijk3l",
+      "name": "Emily",
+      "lastName": "Moore",
+      "email": "emilymoore@example.com",
+      "_expenses": []
+  },
+  {
+      "id": "user_mno4p",
+      "name": "William",
+      "lastName": "Taylor",
+      "email": "williamtaylor@example.com",
+      "_expenses": []
+  },
+  {
+      "id": "user_pqr5t",
+      "name": "Elizabeth",
+      "lastName": "Anderson",
+      "email": "elizabethanderson@example.com",
+      "_expenses": []
+  },
+  {
+      "name": "Michael",
+      "lastName": "Brown",
+      "email": "michaelbrown@example.com",
+      "id": "user_1680802237254",
+      "_expenses": []
+  },
+  {
+      "id": "user_1181344",
+      "name": "Paulo",
+      "lastName": "Roberto",
+      "email": "paulo061104@gmail.com",
+      "_expenses": []
+  },
+  {
+      "id": "user_462743",
+      "name": "Paulo",
+      "lastName": "Roberto",
+      "email": "paulo061104@gmail.com",
+      "_expenses": []
+  }
 ]

@@ -8,7 +8,7 @@ export interface IUser {
   _expenses: IExpenseForUser[];
 }
 
-export interface IBodyPostUser {
+export interface IBodyUser {
   name: string;
   lastName: string;
   email: string;
