@@ -7,7 +7,7 @@ enum messages {
     categoryNotFound = 'Categoria não encontrada',
     categoryNotUpdated= 'Categoria não atualizada',
     userIDNotFound = 'Adicione um userID de um usuario existente',
-    userNotFound = 'Usúario inválido',
+    userNotFound = 'Usúario não encontrado',
 }
 
 export default messages;
