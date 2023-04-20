@@ -1,9 +1,10 @@
 import Joi from 'joi';
-import { IBodyPostUser } from '../interfaces/user';
+import { IBodyUser } from '../interfaces/user';
 
 
-export const bodyPostSchema: Joi.ObjectSchema<IBodyPostUser> = Joi.object({
+export const bodySchemaUser: Joi.ObjectSchema<IBodyUser> = Joi.object({
     name: Joi.string().required(),
     lastName: Joi.string().required(),
     email: Joi.string().required(),
 });
+
