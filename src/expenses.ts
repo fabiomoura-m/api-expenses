@@ -53,7 +53,8 @@ route.post('/', (req: Request, res: Response) => {
                 name: 'string',
                 categoryID: 'string',
                 userID: 'string',
-                amount: 'number'
+                amount: 'number',
+                status: 'PAGO | PENDENTE'
             }
         });
     }
@@ -72,7 +73,6 @@ route.post('/', (req: Request, res: Response) => {
         const newExpense: IExpense = {
             id: newID,
             ...body,
-            status: 'PENDENTE',
             _user: {
                 id,
                 name,
@@ -87,7 +87,6 @@ route.post('/', (req: Request, res: Response) => {
         const newExpenseForUser: IExpenseForUser = {
             id: newID,
             ...body,
-            status: 'PENDENTE',
             _category: {
                 ...existCategory
             }

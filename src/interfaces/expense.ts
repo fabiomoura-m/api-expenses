@@ -21,6 +21,7 @@ export interface IBodyPostExpense {
     categoryID: string;
     userID: string;
     amount: number;
+    status: string;
 }
 
 export interface IExpenseForUser {

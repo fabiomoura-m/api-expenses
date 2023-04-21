@@ -9,7 +9,9 @@ export const bodyPostSchema: Joi.ObjectSchema<IBodyPostExpense> = Joi.object({
     name: Joi.string().required(),
     categoryID: Joi.string().required(),
     userID: Joi.string().required(),
-    amount: Joi.number().strict().required()
+    amount: Joi.number().strict().required(),
+    status: Joi.string().valid('PAGO', 'PENDENTE'),
+    userName: Joi.string()
 });
 
 export const bodyUpdateSchema: Joi.ObjectSchema<IBodyUpdateExpense> =
